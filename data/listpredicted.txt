@@ -1,0 +1,2 @@
+results/predicted1.nii.gz
+results/predicted2.nii.gz
