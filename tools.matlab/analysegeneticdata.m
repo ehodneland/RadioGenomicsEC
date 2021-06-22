@@ -77,6 +77,8 @@ prm.nsubj = numel(prm.subj);
 
 % Extract MR field strength
 tesla = imagevar.tesla;
+tesla(bw) = [];
+imagevar.tesla = [];
 
 % Remove these columns
 subj = imagevar.Subj;
@@ -237,6 +239,11 @@ elseif isequal(clusteroption, 'applycluster')
         
 end
 
+% Y = pdist(vars,'cityblock');
+% Z = linkage(Y,'centroid');
+% dendrogram(Z)
+% T = clusterdata(vars,'cutoff',3);
+
 % Report number of patients
 for i = 1 : nclust
    npatclust = sum(clusterim == i);
@@ -376,8 +383,8 @@ elseif nclust == 3
         str = 'Cluster 3';
         annotation('textbox',[.79 bot1-2*b .1 .01],'String',str,'FitBoxToText','on','LineStyle','None','FontSize',fs);
     elseif isequal(dataoption, 'ML')
-        l1 = 0.588;
-        l2 = 0.76;
+        l1 = 0.56;
+        l2 = 0.74;
         set(an, 'X', [0.20,l1], 'Units', 'Normalized')
         set(an, 'Y', [bot1,bot1]-b, 'Units', 'Normalized')
         an = annotation('doublearrow');        
