@@ -2,7 +2,7 @@ clear all;
 close all;
 
 % Import settings
-settingsgeneticdata;
+settingsradiomicdata;
 
 % -----------------------------------------------------------
 % ------------------ Load image variables -------------------

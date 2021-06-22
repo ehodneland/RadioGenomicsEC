@@ -20,8 +20,8 @@ dataoption = 'manual';
 % dataoption = 'ML';
 
 % Image data to load
-pathimagedata = 'data/TextureVarsManual.csv';
-pathimagedataML = 'data/TextureVarsML.csv';
+pathimagedata = 'data/TexturevarsManual.csv';
+pathimagedataML = 'data/TexturevarsML.csv';
 
 % Which variables to cluster from
 clustermethod = 'all';
