@@ -29,7 +29,7 @@ clustermethod = 'all';
 % clustermethod = 'allbutvolume';
 
 % Name of file
-mfilename = 'analysegeneticdata';
+mfilename = 'analyseradiomicdata';
 
 % fontsize
 fs = 16;
