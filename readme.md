@@ -8,6 +8,20 @@ conda activate envECPaper
 export PYTHONPATH=$PYTHONPATH:3DUnetCNN-master
 
 # ---------------------------------------------------
+# Do training of CNN network (NB lists of image files must be provided and are not included in the current repo)
+# ---------------------------------------------------
+# python3 tools.python/trainUNet3D.py: main file
+# -networkdir: Directory for export of network
+# -gpunum: gpu numger to use {0,1,...}
+# -parfile: parameter file (provided in tools.python)
+# -setupfile: setupfile with paths to list of images and segmentations (example file provided in tools.python, but the lists themselves must be provided)
+python3 tools.python/trainUNet3D.py 
+	-networkdir=networks/network-DEMO 
+	-gpunum=1 
+	-parfile=tools.python/settingsUNet3D.py
+        -setupfile=tools.python/setupvibe.py
+
+# ---------------------------------------------------
 # Do segmentation of tumor (NB path to image data files must be replaced by local copies)
 # --------------------------------------------------
 # python3 tools.python/predictUNet3D.py: main file 
