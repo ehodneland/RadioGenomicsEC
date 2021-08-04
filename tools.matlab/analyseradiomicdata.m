@@ -138,7 +138,7 @@ disp(msg);
 vars = double(imagevar.Variables);
 
 %-------------------------------------------------------------
-% Load load clusters and centroids to be applied to the data
+% Load clusters and centroids to be applied to the data
 %-------------------------------------------------------------
 if isequal(clusteroption, 'applycluster')    
     msg = ['Loading ' pathcluster];

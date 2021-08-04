@@ -3,7 +3,7 @@ printresultpath = 'results';
 printfigspath = 'figs';
 
 % Path to cluster file
-pathcluster = 'results/analysegeneticdata-METHOD-all-NCLUSTERS-3.mat';
+pathcluster = 'results/analyseradiomicdata-METHOD-all-NCLUSTERS-3.mat';
 
 % Find clusters
 % clusteroption = 'createcluster';

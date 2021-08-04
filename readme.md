@@ -40,8 +40,12 @@ python3 tools.python/printvars.py
 	-outpath results/FeatsVibe2min.csv
 
 # --------------------------------------------------
-# Do clustering and plotting of heatmap in Matlab
+# Load clustering based on texture variables and plotting of heatmap in Matlab
 # -------------------------------------------------
+# If you want to make any changes, e.g. generating other number of clusters etc, 
+# the settings can be found in settingsradiomicdata.m can be played around with if you wan
+
 # Start matlab, then run 
 setpath;
-analysegeneticdata;
+analyseradiomicdata;
+
