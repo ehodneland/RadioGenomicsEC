@@ -29,9 +29,9 @@ python3 tools.python/predictUNet3D.py
 # --------------------------------------------------
 # python3 tools/printvars.py  
 # -listdata: Path to csv file with image paths 
-# -maskfield: The header field in csv file containing the mask paths 
-# -imfield: The header fields in csv file containing the image paths, separated by spaces 
-# -outpath: Full path of output file written with texture variables 
+# -maskfield: Column header of the csv file containing the mask paths 
+# -imfield: Column header of the csv file containing the image paths (for multiple images, use space for separating)
+# -outpath: Full path of output file of exported texture variables 
 # Example:
 python3 tools.python/printvars.py 
 	-listdata data/ListdataTexture.csv 
